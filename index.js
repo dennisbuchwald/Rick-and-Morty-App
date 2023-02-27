@@ -1,3 +1,5 @@
+import { createCharacterCard } from "./components/card/card.js";
+
 const cardContainer = document.querySelector('[data-js="card-container"]');
 const searchBarContainer = document.querySelector(
   '[data-js="search-bar-container"]'
@@ -21,6 +23,7 @@ async function fetchCharacters() {
 
     if (response.ok) {
       const characters = data.results;
+      console.log(characters);
       characters.forEach((character) => {
         const card = createCharacterCard(character);
         cardContainer.append(card);
