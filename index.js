@@ -12,3 +12,10 @@ const pagination = document.querySelector('[data-js="pagination"]');
 const maxPage = 1;
 const page = 1;
 const searchQuery = "";
+
+// Importiere die Funktion
+import { SearchButton } from "./components/search-bar/search-bar.js";
+
+// Rufe die Funktion auf, um den Event-Listener hinzuzufügen
+SearchButton();
+
