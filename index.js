@@ -26,6 +26,7 @@ async function fetchCharacters() {
       console.log(characters);
       characters.forEach((character) => {
         const card = createCharacterCard(character);
+        console.log(card);
         cardContainer.append(card);
       });
     } else {

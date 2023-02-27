@@ -22,5 +22,6 @@ export function createCharacterCard(props) {
         </dl>
       </div>
     `;
+  console.log(characterCard);
   return characterCard;
 }
