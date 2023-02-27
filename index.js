@@ -1,3 +1,9 @@
+import { currentPage } from "./components/nav-pagination/nav-pagination.js";
+import {
+  prevButtonClick,
+  nextButtonClick,
+} from "./components/nav-button/nav-button.js";
+
 const cardContainer = document.querySelector('[data-js="card-container"]');
 const searchBarContainer = document.querySelector(
   '[data-js="search-bar-container"]'
@@ -12,3 +18,7 @@ const pagination = document.querySelector('[data-js="pagination"]');
 const maxPage = 1;
 const page = 1;
 const searchQuery = "";
+
+currentPage();
+prevButtonClick();
+nextButtonClick();
